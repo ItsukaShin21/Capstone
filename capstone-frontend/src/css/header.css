@@ -1,0 +1,10 @@
+.headerBackground {
+    background-color: rgba(25, 29, 128, 1);
+    height: 7vh;
+    width: 100vw;
+}
+
+.logoTitle {
+    font-size: 18px;
+    padding-top: 0.5%;
+}

@@ -1,0 +1,11 @@
+.registerListBg {
+    background-color: #EDECF2;
+    height: 100dvh;
+}
+
+.userTable {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 2.5%;
+    height: 100%;
+}

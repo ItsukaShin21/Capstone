@@ -1,0 +1,23 @@
+.loginBackground {
+    background-color: rgba(25, 29, 128, 1);
+    width: 100vw;
+    height: 100vh;
+}
+
+.loginTextbox {
+    background-color: rgba(237, 242, 247, 1);
+    height: 50px;
+}
+
+.loginButton {
+    height: 50px;
+    background-color: rgba(25, 29, 128, 1);
+}
+
+.loginButton:hover, .loginButton:active {
+    background-color: rgb(98, 101, 201);
+}
+
+.login-container {
+    width: 40% !important;
+}
