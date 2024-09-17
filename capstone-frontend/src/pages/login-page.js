@@ -2,12 +2,14 @@ import { USER_AUTHENTICATE } from "../components/user-manager";
 import { useState } from "react";
 import { ToastContainer } from "react-toastify";
 import { Spinner } from "react-bootstrap";
+import { Link } from 'react-router-dom'; // Used for the sign up link
+
 
 function LoginPage() {
     const { USER_LOGIN } = USER_AUTHENTICATE();
     const [loader, setLoader] = useState("Login");
     const [state, setState] = useState({
-        email: '',
+        name: '',
         password: '',
     });
 
@@ -15,7 +17,7 @@ function LoginPage() {
     const handleLogin = async(event) => {
         event.preventDefault();
         setLoader("");
-        await USER_LOGIN(state.email, state.password);
+        await USER_LOGIN(state.name, state.password);
         setState((prevState) => ({
             ...prevState,
             password: '',
@@ -23,7 +25,7 @@ function LoginPage() {
         setLoader("Login");
     };
 
-    //Function for password and email change event
+    //Function for password and name change event
     const handleChange = (event) => {
         const field = event.target.name;
         setState((prevState) => ({
@@ -37,14 +39,13 @@ function LoginPage() {
         <ToastContainer />
             <form onSubmit={ handleLogin } className="d-flex row align-content-center login-container justify-content-center bg-white p-5 rounded-5">
             <h1 className="text-center fw-semibold mb-4">Login</h1>
-            <p className="text-center">Sign in to your account</p>
             <hr />
-                <input type="email" 
-                       name="email"
+                <input type="name" 
+                       name="name"
                        className="loginTextbox border-0 mt-3 rounded-3"
-                       placeholder="Email"
-                       id="email"
-                       value={ state.email }
+                       placeholder="Name"
+                       id="name"
+                       value={ state.name }
                        onChange={ handleChange } 
                        required/>
 
@@ -64,6 +65,10 @@ function LoginPage() {
                             {loader === "" && <Spinner animation="border" variant="white" />}
                             {loader}
                         </button>
+                    {/* Sign Up LinK*/}
+                <div className="text-center mt-3">
+                    <p className="mb-0">Don't have an account? <Link to="/registrationform" className="text-primary">Sign up</Link></p>
+                </div>
             </form>
         </div>
     )

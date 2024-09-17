@@ -1,0 +1,22 @@
+.user-profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .user-photo {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .user-name {
+    font-weight: bold;
+  }
+  
+  .user-type {
+    font-size: 0.9rem;
+    color: gray;
+  }
+  
