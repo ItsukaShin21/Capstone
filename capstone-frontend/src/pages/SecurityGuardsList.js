@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useTable, usePagination } from 'react-table';
 import { Container, Row, Col, Button, Form, Table, Modal } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './SecurityGuardsList.css'; 
+import '../css/SecurityGuardsList.css'; 
 
 function SecurityGuardsList() {
   const [search, setSearch] = useState('');

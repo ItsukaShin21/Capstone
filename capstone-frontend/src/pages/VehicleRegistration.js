@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './VehicleRegistration.css'; 
+import '../css/VehicleRegistration.css'; 
 
 function VehicleRegistration() {
   const [plateNo, setPlateNo] = useState('');

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useTable, usePagination } from 'react-table';
 import { Container, Row, Col, Form, Table, Button, Modal } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './DailyLogs.css'; 
+import '../css/DailyLogs.css'; 
 
 function DailyLogs() {
   const [search, setSearch] = useState('');

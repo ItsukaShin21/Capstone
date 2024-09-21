@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useTable, usePagination } from 'react-table';
 import { Container, Row, Col, Form, Table, Button } from 'react-bootstrap'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './RegisteredVehicles.css'; 
+import '../css/RegisteredVehicles.css'; 
 
 function RegisteredVehicles() {
   const [search, setSearch] = useState('');

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useTable, usePagination } from 'react-table';
 import { Container, Row, Col, Button, Form, Table, Modal } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './CSOList.css'; 
+import '../css/CSOList.css'; 
 
 function CSOList() {
   const [search, setSearch] = useState('');
